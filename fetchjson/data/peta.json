@@ -1,0 +1,28 @@
+
+{
+    "places": [ {
+        "lokasi": [-6.244815, 106.784379],
+         "mall": "gandaria-city mall",
+        "review": "gandaria city Mal ini terdiri dari 3 Lantai Parkir Basement, 5 Lantai pusat perbelanjaan, dan 1 lantai untuk Skenoo Hall dengan total luas 336,279 meter persegi",
+        "gambar": "images/gandaria city.png"
+    },
+    {
+        "lokasi": [-6.265508, 106.783127],
+         "mall": "pondok indah mall",
+        "review": "disini pondok indah mall",
+        "gambar": "images/pondok-indah-mall.jpeg"
+    },
+    {
+        "lokasi": [-6.224509, 106.803833],
+        "mall": "fx sudirman",
+        "review": "disini mall fx sudirman ",
+        "gambar": "images/fx-sudirman.jpg"
+    },
+    {
+        "lokasi": [-6.151051, 106.892079],
+         "mall": "Mall of indonesia",
+        "review": "disini mall of indonesia",
+        "gambar": "images/moi.jpg"
+    }   ]
+}
+

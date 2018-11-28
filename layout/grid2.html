@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <style>
+        .container {
+        display: grid;
+        /* merubah grid meenjadi 2 dimensi berikut parent untuk kolom dan garis */
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 30px 100px 100px;
+        /* untuk memudahkan visualisasi gunakan grid-gap */
+        grid-gap: 4px;
+    }
+    .menu {
+        background: lightblue;
+        /* Untuk memposisikan elemen menguasai kolom atau baris, digunakan gridcolumn-
+        start dan grid-column-end */
+        /* grid-column-start: 1;
+        grid-column-end: 4; */
+        /* grid column start dan grid column end dapat di sederhanakan sebagai berikut */
+        grid-column: 1/4;
+    }
+    .sidebar {
+        background: lightyellow;
+    }
+    .konten {
+        background: pink;
+    }
+    .footer {
+        background: lime;
+    }
+   </style>
+    <title>grid 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">Menu</div>
+        <div class="sidebar">Side Bar</div>
+        <div class="konten">kontent 1</div>
+        <div class="content">kontent 2</div>
+        <div class="content">kontent 3</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

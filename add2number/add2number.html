@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>add 2 number</title>
+</head>
+<body>
+    <h1>tambah kan duangka</h1>
+    <div class="calc">  <input type="text" size="5" placeholder="0" />   +
+         <input type="text" size="5" placeholder="0" />
+         <button> = </button>
+          <input type="text" size="5" readonly />
+    </div>
+</body>
+<script type="text/javascript">
+    function kalkulator() {
+        let angka = document.querySelectorAll('input');
+        let i1= angka[0].value ; //angka pertama
+      let i2= angka[1].value ; //angka kedua
+      angka[2].value= parseInt(i1) + parseInt(i2);
+    }
+    let tombol = document.querySelector('button');
+    tombol.addEventListener('click', kalkulator);
+    </script>
+</html>
+

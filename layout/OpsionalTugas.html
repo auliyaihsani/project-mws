@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        /* .container {
+            display: grid;
+            width: 100%;
+            grid-gap: 6px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 30px 100px 100px 100px 30px;
+            display: flex;
+            justify-content: center;
+        } */
+        .konten1 {
+            background: red;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+            grid-row-end: 3;
+
+        }
+        .konten2 {
+            background: lightblue;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+        .konten3 {
+            background: blue;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 3;
+            grid-row-end: 8;
+
+        }
+        .konten4{
+            background: lime;
+           grid-column-start: 2;
+           grid-column-end: 4;
+           grid-row-start: 3;
+           grid-row-end: 4;
+
+        }
+
+           .konten5{
+            background:purple;
+            grid-column: 2/3;
+            grid-row: 4/8;
+        }
+        .konten6{
+            background:yellow;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 4;
+            grid-row-end: 8;
+        }
+
+
+
+
+    </style>
+    <title>Css Grid</title>
+</head>
+<body>
+
+        <div class="container">
+        <div class="konten1"> <h1>1</h1></div>
+        <div class="konten2"><h1>2</h1></div>
+        <div class="konten3"> <h1>3</h1></div>
+        <div class="konten4"><h1>4</h1></div>
+        <div class="konten5"><h1>5</h1></div>
+        <div class="konten6"><h1>6</h1></div>
+        </div>
+
+</body>
+</html>

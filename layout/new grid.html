@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<style>
+.container {
+    display: grid;
+    /* merubah grid meenjadi 2 dimensi berikut parent untuk kolom dan garis */
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 30px 100px 100px 100px 30px;
+    /* untuk memudahkan visualisasi gunakan grid-gap */
+    grid-gap: 4px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.menu {
+    background: lightblue;
+    /* Untuk memposisikan elemen menguasai kolom atau baris, digunakan gridcolumn-
+    start dan grid-column-end */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1/2;
+    overflow:hidden;
+/*	color:rgb(19, 18, 18);*/
+	float:left;
+	padding:0;
+	/* width: 650px; */
+	margin:0 0 0;
+	background: #1abc9c;
+
+}
+.sidebar {
+    background: lightyellow;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    grid-column-end: 1/2;
+}
+
+body{
+    background: #BBDEFB;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+.konten1{
+    background: pink;
+    grid-column: 2/5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.konten2{
+    background: pink;
+    grid-column: 2/5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.konten3{
+    background: pink;
+    grid-column: 2/5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.footer {
+    background: lime;
+    grid-column: 1/5;
+    grid-row: 5/5;
+}
+
+
+
+</style>
+    <title>Css Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">Menu</div>
+        <div class="sidebar">Side Bar</div>
+        <div class="konten1">kontent 1</div>
+        <div class="konten2">kontent 2</div>
+        <div class="konten3">kontent 3</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
