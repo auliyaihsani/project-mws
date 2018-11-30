@@ -1,0 +1,21 @@
+{
+    "short_name": "GDK",
+    "name": "Mobile Web Specialist - M.Auliya Ihsani",
+    "icons": [
+      {
+        "src": "/gdk.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/gdk.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "https://project-mws-75a0b.firebaseapp.com/",
+    "background_color": "#3367D6",
+    "display": "standalone",
+    "scope": "/index.html/",
+    "theme_color": "#485e74"
+  }

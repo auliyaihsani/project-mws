@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#3367D6">
     <link rel="stylesheet" href="layout/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="manifest" href="/manifest.json">
     <title>Tugas Mobile Web Spesialist</title>
 </head>
 <body>
@@ -26,18 +27,17 @@
         <div class="tugas">
             <h3>Tugas Google Developer 2018 </h3>
             <hr>
-
             <div class="menu">
                     <h3>kalkulator</h3>
-                    <a href="kalkulator/index.html"><img src="img/icon/calculator.png" class="icon"> </a><br>
+                    <a href="kalkulator/index.html"><img src="img/icon/calculator.png" class="icon"> </a>
                     <h3>Menambahkan 2 Angka</h3>
-                    <a href="add2number/add2number.html"><img src="img/icon/add.png" class="icon"></a><br>
+                    <a href="add2number/add2number.html"><img src="img/icon/add.png" class="icon"></a>
                     <h3>MapBox Location</h3>
-                    <a href="peta/index.html"><img src="img/icon/map.png" class="icon"></a><br>
+                    <a href="peta/index.html"><img src="img/icon/map.png" class="icon"></a>
                     <h3>Css Grid</h3>
-                    <a href="layout/new grid.html"><img src="img/icon/grid.png" class="icon"></a><br>
+                    <a href="layout/new grid.html"><img src="img/icon/grid.png" class="icon"></a>
                     <h3>Fetch Json</h3>
-                    <a href="fetchjson/readnote.html" ><img src="img/icon/json.png" class="icon"> </a><br>
+                    <a href="fetchjson/readnote.html" ><img src="img/icon/json.png" class="icon"> </a>
             </div>
         </div>
     </div>
@@ -45,6 +45,15 @@
     <p>&copy;Copyright M.Auliya Ihsani 2018</p>
 </footer>
 </div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('sw.js')
+          .then(reg => console.log('SW terdaftar', reg))
+          .catch(err => console.log('SW Gagal: ', err));
+      });
+    }
+  </script>
 </body>
 </html>
 
